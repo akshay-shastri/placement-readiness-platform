@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KodNest Premium Build System</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="app-container">
+    
+    <!-- Top Bar -->
+    <header class="top-bar">
+      <div class="top-bar-left">Project Name</div>
+      <div class="top-bar-center">Step 1 / 5</div>
+      <div class="top-bar-right">
+        <span class="badge">In Progress</span>
+      </div>
+    </header>
+
+    <!-- Context Header -->
+    <section class="context-header">
+      <h1>Define Your Product Requirements</h1>
+      <p>Establish the foundation of what you're building and why it matters.</p>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      
+      <!-- Primary Workspace -->
+      <div class="primary-workspace">
+        <div class="card">
+          <h3>Product Overview</h3>
+          <p>Describe the core problem your product solves and the value it delivers to users.</p>
+          <input type="text" class="input" placeholder="Enter product description">
+        </div>
+
+        <div class="card">
+          <h3>Target Audience</h3>
+          <p>Who will use this product? Be specific about their needs and context.</p>
+          <input type="text" class="input" placeholder="Define your audience">
+        </div>
+
+        <div class="empty-state">
+          <p>No data yet. Complete the fields above to continue.</p>
+          <button class="btn btn-primary">Get Started</button>
+        </div>
+      </div>
+
+      <!-- Secondary Panel -->
+      <aside class="secondary-panel">
+        <div class="panel-section">
+          <h3>What This Step Does</h3>
+          <p>This step captures the essential context needed to build a coherent product strategy.</p>
+        </div>
+
+        <div class="panel-section">
+          <h3>Prompt Template</h3>
+          <div class="prompt-box">Build a SaaS product that helps [audience] solve [problem] by providing [solution].</div>
+          <div class="panel-actions">
+            <button class="btn btn-secondary">Copy Prompt</button>
+            <button class="btn btn-primary">Build in Lovable</button>
+            <button class="btn btn-secondary">It Worked</button>
+            <button class="btn btn-secondary">Report Error</button>
+            <button class="btn btn-secondary">Add Screenshot</button>
+          </div>
+        </div>
+      </aside>
+
+    </main>
+
+    <!-- Proof Footer -->
+    <footer class="proof-footer">
+      <div class="proof-checklist">
+        <label class="checkbox">
+          <input type="checkbox">
+          <span>UI Built</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span>Logic Working</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span>Test Passed</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span>Deployed</span>
+        </label>
+      </div>
+    </footer>
+  
+  </div>
+</body>
+</html>

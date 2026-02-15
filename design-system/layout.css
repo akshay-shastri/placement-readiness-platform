@@ -1,0 +1,122 @@
+/* KodNest Premium Build System - Layout */
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top Bar */
+.top-bar {
+  height: var(--topbar-height);
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--space-lg);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.top-bar-left {
+  font-weight: 600;
+  font-size: var(--text-body-large);
+}
+
+.top-bar-center {
+  font-size: var(--text-small);
+  color: var(--color-text-primary);
+}
+
+.top-bar-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Context Header */
+.context-header {
+  padding: var(--space-xl) var(--space-lg);
+  border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+}
+
+.context-header h1 {
+  margin-bottom: var(--space-xs);
+}
+
+.context-header p {
+  font-size: var(--text-body-large);
+  color: var(--color-text-primary);
+  opacity: 0.8;
+}
+
+/* Main Content Area */
+.main-content {
+  flex: 1;
+  display: flex;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+}
+
+/* Primary Workspace */
+.primary-workspace {
+  flex: 0 0 var(--workspace-width);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+/* Secondary Panel */
+.secondary-panel {
+  flex: 0 0 calc(var(--panel-width) - var(--space-md));
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.panel-section {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: var(--space-md);
+}
+
+.panel-section h3 {
+  margin-bottom: var(--space-sm);
+}
+
+.prompt-box {
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: var(--space-sm);
+  font-family: 'Courier New', monospace;
+  font-size: var(--text-small);
+  margin-bottom: var(--space-sm);
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.panel-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+/* Proof Footer */
+.proof-footer {
+  background-color: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  padding: var(--space-md) var(--space-lg);
+  position: sticky;
+  bottom: 0;
+}
+
+.proof-checklist {
+  display: flex;
+  gap: var(--space-lg);
+  align-items: center;
+  justify-content: center;
+}

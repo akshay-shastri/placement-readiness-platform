@@ -1,0 +1,119 @@
+/* KodNest Premium Build System - Components */
+
+/* Buttons */
+.btn {
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--border-radius);
+  border: 1px solid transparent;
+  font-size: var(--text-body-size);
+  font-weight: 500;
+  transition: all var(--transition-speed) var(--transition-timing);
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--color-accent);
+  color: var(--color-surface);
+  border-color: var(--color-accent);
+}
+
+.btn-primary:hover {
+  background-color: #6D0000;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-text-primary);
+  border-color: var(--color-border);
+}
+
+.btn-secondary:hover {
+  border-color: var(--color-text-primary);
+}
+
+/* Inputs */
+.input {
+  width: 100%;
+  padding: var(--space-sm);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  font-size: var(--text-body-size);
+  font-family: var(--font-sans);
+  background-color: var(--color-surface);
+  transition: border-color var(--transition-speed) var(--transition-timing);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-text-primary);
+}
+
+/* Cards */
+.card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: var(--space-md);
+}
+
+/* Status Badge */
+.badge {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--border-radius);
+  font-size: var(--text-small);
+  font-weight: 500;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+}
+
+.badge-success {
+  color: var(--color-success);
+  border-color: var(--color-success);
+}
+
+.badge-warning {
+  color: var(--color-warning);
+  border-color: var(--color-warning);
+}
+
+/* Checkbox */
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: var(--text-body-size);
+}
+
+.checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: var(--space-xl);
+  color: var(--color-text-primary);
+}
+
+.empty-state p {
+  margin: 0 auto var(--space-md);
+}
+
+/* Error Message */
+.error-message {
+  padding: var(--space-md);
+  border: 1px solid var(--color-accent);
+  border-radius: var(--border-radius);
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
+}
+
+.error-message strong {
+  display: block;
+  margin-bottom: var(--space-xs);
+  color: var(--color-accent);
+}

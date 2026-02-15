@@ -1,0 +1,47 @@
+/* KodNest Premium Build System - Base Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-size);
+  line-height: var(--line-height-body);
+  color: var(--color-text-primary);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  line-height: var(--line-height-tight);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: var(--text-heading-xl);
+  margin-bottom: var(--space-sm);
+}
+
+h2 {
+  font-size: var(--text-heading-lg);
+  margin-bottom: var(--space-sm);
+}
+
+h3 {
+  font-size: var(--text-heading-md);
+  margin-bottom: var(--space-xs);
+}
+
+p {
+  max-width: var(--text-max-width);
+  margin-bottom: var(--space-sm);
+}
+
+button {
+  font-family: var(--font-sans);
+  cursor: pointer;
+}
